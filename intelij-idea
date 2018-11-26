@@ -43,3 +43,13 @@
 -XX:ErrorFile=$USER_HOME/java_error_in_idea_%p.log
 -XX:HeapDumpPath=$USER_HOME/java_error_in_idea.hprof
 -Xbootclasspath/a:../lib/boot.jar
+
+-XX:+PrintTenuringDistribution
+-XX:+PrintGC
+-XX:+PrintGCDetails
+-XX:+PrintGCTimeStamps
+-XX:+PrintGCApplicationStoppedTime
+-Xloggc:/tmp/idea/gc.log
+-XX:+UseGCLogFileRotation
+-XX:NumberOfGCLogFiles=2
+-XX:GCLogFileSize=50M
